@@ -161,7 +161,7 @@
                                 <h1 class="mb-5 text-2xl font-extrabold">Junior Program</h1>
                                 <p class="mb-5 "> Hockeys is committed to bringing you comprehensive coverage of events, including schedules, results, and exclusive interviews with players and coaches.
                                     </p>
-                                <button class="btn btn-error bg-yellow-500">Register Now!</button>
+                                <button class="btn btn-error bg-yellow-500 text-white">Register Now!</button>
                             </div>
                         </div>
                     </div>
@@ -172,7 +172,7 @@
                                 <h1 class="mb-5 text-2xl font-extrabold">Junior Program</h1>
                                 <p class="mb-5"> Hockeys is committed to bringing you comprehensive coverage of events, including schedules, results, and exclusive interviews with players and coaches.
                                     </p>
-                                <button class="btn btn-error bg-yellow-500">Register Now!</button>
+                                <button class="btn btn-error bg-yellow-500 text-white">Register Now!</button>
                             </div>
                         </div>
                     </div>
@@ -184,7 +184,7 @@
                             <h1 class="mb-5 text-2xl font-extrabold ">Junior Program</h1>
                             <p class="mb-5 pl-2"> 
                                 Check our events calendar regularly to plan your hockey-filled weekends and make the most of the exciting moments that the sport has to offer.</p>
-                            <button class="btn btn-error bg-yellow-500">Register Now!</button>
+                            <button class="btn btn-error bg-yellow-500 text-white">Register Now!</button>
                         </div>
                     </div>
                 </div>
@@ -424,15 +424,14 @@
                 </div>
             </div>
         </section>
-        
+        <!--input section-->
         <section class="mt-24 ">
             <div class="text-center">
                 <h2 class="text-4xl font-extrabold">Get In Touch</h2>
-                <p class="mt-2 mb-6"> Elevate your game with our comprehensive hockey training programs designed for players of all levels.
-                    </p>
+                <p> Elevate your game with our comprehensive hockey training programs designed for players of all levels. </p>
             </div>
-            <div class="flex place-content-evenly ">
-                <div class="space-y-4 w-1/3">
+            <div class="grid grid-cols-1 lg:grid-cols-3">
+                <div class="space-y-4 p-4">
                     <div class="bg-[#BCED6D1A] px-5 py-6 rounded-2xl">
                         <img src="Images/phone-png-17024.png"width="45px" alt="" srcset="">
                         <p>Phone Number : <br>
@@ -445,43 +444,61 @@
                     </div>
                     <div class="bg-[#629CF31A] px-5 py-6 rounded-2xl">
                         <img src="Images/location-icon-png-4246.png"width="45px" alt="" srcset="">
-                        <p>Location : <br> 
+                        <p>Location : <br>
                             152/1 Mohakhali Wireless Gate</p>
                     </div>
                 </div>
-                <div class=" m-3 w-1/3">
-                    <div class="flex gap-2 ">
-                        <label class="form-control w-full max-w-xs">
-                            <h4>Your Name</h4>
+                <div class=" bg-white p-8 col-span-2 rounded-md shadow-md">
+                    <form action="#" method="POST">
+
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
+                           
+                            <div class="mb-4">
+                                <label for="name" class="text-black text-xl font-bold mb-3">Your Name</label>
+                                <input type="text" placeholder="Enter your full name" class="input input-bordered w-full bg-[#13131808]" />
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="email" class="text-black text-xl font-bold mb-3">Your Email</label>
+                                <input type="text" placeholder="Enter your email" class="input input-bordered w-full bg-[#13131808]" />
+                            </div>
+
+                        </div>
+
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
                             
-                            <input type="text" placeholder="Enter your full name" class="input input-bordered w-full max-w-xs" />
-                        </label>
-                        <label class="form-control w-full max-w-xs">
-                            <h4>Your Email</h4>
-                            <input type="text" placeholder="Enter your Email" class="input input-bordered w-full max-w-" />
-                        </label>
-                    </div>
-                    <div class="flex gap-2">
-                        <label class="form-control w-full max-w-xs">
-                            <h4>Subject</h4>
+                            <div class="mb-4">
+                                <label for="subject" class="text-black text-xl font-bold mb-3">Subject</label>
+                                <input type="text" placeholder="Enter your subject" class="input input-bordered w-full bg-[#13131808]" />
+                            </div>
+
+                           
+                            <div class="mb-4">
+                                <label for="phone" class="text-black text-xl font-bold mb-3">Phone
+                                    Number</label>
+                                    <input type="text" placeholder="Enter your phone number" class="input input-bordered w-full bg-[#13131808]" />
+                            </div>
+                        </div>
+
+                       
+                        <div class="mb-4">
+                            <label for="message" class="text-black text-xl font-bold mb-3">Message</label>
+                            <textarea class="textarea textarea-bordered w-full h-52 bg-[#13131808]"placeholder="Write your message"></textarea>
+                        </div>
+
+                    
+                        <div>
                             
-                            <input type="text" placeholder="Enter your Subject" class="input input-bordered w-full max-w-xs" />
-                        </label>
-                        <label class="form-control w-full max-w-xs">
-                            <h4>Phone Number</h4>
-                            <input type="text" placeholder="Enter your Phone Number" class="input input-bordered w-full max-w-xs" />
-                        </label>
-                    </div>
-                    <div>
-                        <label class="form-control ">
-                            <h4>Message</h4>
-                            <input class="textarea textarea-bordered h-64" placeholder="Write your message"></input>
-                          </label>
-                    </div>
-                    <button class="btn btn-error w-full mt-3 ">Send Message</button>
+                            <button class="btn btn-error w-full text-white bg-yellow-500">Send Message</button>
+                        </div>
+
+                    </form>
                 </div>
+
+                
             </div>
         </section>
+        
         <!-- last section--> 
             <section class="footer footer-center p-10 bg-base-200 text-base-content rounded my-8">
                 <nav class="grid grid-flow-col gap-4">
@@ -503,54 +520,61 @@
              
         </section>
     </main>
-   <footer class="footer grid-rows-1 p-10 bg-neutral text-neutral-content ">
-        <nav class="px-6 py-6 pt-9">
-          <header class="footer-title">Get In Touch</header> 
-          <p>Dit amet consectetur. Condimentum <br> adipiscing aliquam turpis placerat dolor. Purus <br> urna in sit nullam proin. </p> 
+  
+
+
+
+      <!--footer-->
+      <footer class="footer grid-rows-1 pt-24 px-10 bg-black text-neutral-content">
+        <nav>
+            <header class="footer-title font-bold text-2xl text-white">Get In Touch</header>
+            <p class="text-xs">  For more information or to express your excitement, visit our contact page or connect with us on social media.
+             </p>
+                <h3 class="flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M21.75 6.75V17.25C21.75 17.8467 21.5129 18.419 21.091 18.841C20.669 19.2629 20.0967 19.5 19.5 19.5H4.5C3.90326 19.5 3.33097 19.2629 2.90901 18.841C2.48705 18.419 2.25 17.8467 2.25 17.25V6.75M21.75 6.75C21.75 6.15326 21.5129 5.58097 21.091 5.15901C20.669 4.73705 20.0967 4.5 19.5 4.5H4.5C3.90326 4.5 3.33097 4.73705 2.90901 5.15901C2.48705 5.58097 2.25 6.15326 2.25 6.75M21.75 6.75V6.993C21.75 7.37715 21.6517 7.75491 21.4644 8.0903C21.2771 8.42569 21.0071 8.70754 20.68 8.909L13.18 13.524C12.8252 13.7425 12.4167 13.8582 12 13.8582C11.5833 13.8582 11.1748 13.7425 10.82 13.524L3.32 8.91C2.99292 8.70854 2.72287 8.42669 2.53557 8.0913C2.34827 7.75591 2.24996 7.37815 2.25 6.994V6.75" stroke="#FF4240" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+
+            <a class="link link-hover">hockeys@support.com</a></h3>
             <h3 class="flex">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M21.75 6.75V17.25C21.75 17.8467 21.5129 18.419 21.091 18.841C20.669 19.2629 20.0967 19.5 19.5 19.5H4.5C3.90326 19.5 3.33097 19.2629 2.90901 18.841C2.48705 18.419 2.25 17.8467 2.25 17.25V6.75M21.75 6.75C21.75 6.15326 21.5129 5.58097 21.091 5.15901C20.669 4.73705 20.0967 4.5 19.5 4.5H4.5C3.90326 4.5 3.33097 4.73705 2.90901 5.15901C2.48705 5.58097 2.25 6.15326 2.25 6.75M21.75 6.75V6.993C21.75 7.37715 21.6517 7.75491 21.4644 8.0903C21.2771 8.42569 21.0071 8.70754 20.68 8.909L13.18 13.524C12.8252 13.7425 12.4167 13.8582 12 13.8582C11.5833 13.8582 11.1748 13.7425 10.82 13.524L3.32 8.91C2.99292 8.70854 2.72287 8.42669 2.53557 8.0913C2.34827 7.75591 2.24996 7.37815 2.25 6.994V6.75" stroke="#FF4240" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2.25 6.75C2.25 15.034 8.966 21.75 17.25 21.75H19.5C20.0967 21.75 20.669 21.5129 21.091 21.091C21.5129 20.669 21.75 20.0967 21.75 19.5V18.128C21.75 17.612 21.399 17.162 20.898 17.037L16.475 15.931C16.035 15.821 15.573 15.986 15.302 16.348L14.332 17.641C14.05 18.017 13.563 18.183 13.122 18.021C11.4849 17.4191 9.99815 16.4686 8.76478 15.2352C7.53141 14.0018 6.58087 12.5151 5.979 10.878C5.817 10.437 5.983 9.95 6.359 9.668L7.652 8.698C8.015 8.427 8.179 7.964 8.069 7.525L6.963 3.102C6.90214 2.85869 6.76172 2.6427 6.56405 2.48834C6.36638 2.33397 6.1228 2.25008 5.872 2.25H4.5C3.90326 2.25 3.33097 2.48705 2.90901 2.90901C2.48705 3.33097 2.25 3.90326 2.25 4.5V6.75Z" stroke="#FF4240" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
-          <a class="link link-hover ">hockeys@support.com</a>
-          </h3>
-          <h3 class="flex">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M2.25 6.75C2.25 15.034 8.966 21.75 17.25 21.75H19.5C20.0967 21.75 20.669 21.5129 21.091 21.091C21.5129 20.669 21.75 20.0967 21.75 19.5V18.128C21.75 17.612 21.399 17.162 20.898 17.037L16.475 15.931C16.035 15.821 15.573 15.986 15.302 16.348L14.332 17.641C14.05 18.017 13.563 18.183 13.122 18.021C11.4849 17.4191 9.99815 16.4686 8.76478 15.2352C7.53141 14.0018 6.58087 12.5151 5.979 10.878C5.817 10.437 5.983 9.95 6.359 9.668L7.652 8.698C8.015 8.427 8.179 7.964 8.069 7.525L6.963 3.102C6.90214 2.85869 6.76172 2.6427 6.56405 2.48834C6.36638 2.33397 6.1228 2.25008 5.872 2.25H4.5C3.90326 2.25 3.33097 2.48705 2.90901 2.90901C2.48705 3.33097 2.25 3.90326 2.25 4.5V6.75Z" stroke="#FF4240" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-          <a class="link link-hover ">(+62) 123-321-543</a>
-          </h3>
+            <a class="link link-hover">(+62) 123-321-543</a></h3>
         </nav>
-        <nav class="px-6 py-6 pt-9">
-          <header class="footer-title">Company</header> 
-          <a class="link link-hover">About us</a>
-          <a class="link link-hover">Leadership</a>
-          <a class="link link-hover">Careers</a>
-          <a class="link link-hover">News & Article</a>
-          <a class="link link-hover">Legal Notice</a>
-        </nav> 
-        
-        <nav class="px-6 py-6 pt-9">
-          <header class="footer-title">Support</header> 
-          <a class="link link-hover">Help Center</a>
-          <a class="link link-hover">FAQ</a>
-          <a class="link link-hover">Ticket Support</a>
-          <a class="link link-hover">Contact Us</a>
-        </nav> 
+        <div class="grid-cols-2 gap-20 lg:grid-rows-2 lg:gap-x-36">
+            <nav class="flex flex-col">
+                <header class="footer-title">Company</header>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Leadership</a>
+                <a class="link link-hover">Careers</a>
+                <a class="link link-hover">News & Article</a>
+                <a class="link link-hover">Legal Notice</a>
+            </nav>
+    
+            <nav class="flex flex-col">
+                <header class="footer-title">Support</header>
+                <a class="link link-hover">Help Center</a>
+                <a class="link link-hover">FAQ</a>
+                <a class="link link-hover">Ticket Support</a>
+                <a class="link link-hover">Contact Us</a>
+            </nav>
+        </div>
 
-        <nav class="px-6 py-6 pt-9">
-          <header class="footer-title">Services</header> 
-          <a class="link link-hover">Academy</a>
-          <a class="link link-hover">Group Lesson</a>
-          <a class="link link-hover">Private Lesson</a>
-          <a class="link link-hover">Hockeys for kids</a>
-          <a class="link link-hover">Hockeys for Adult</a>
-        </nav> 
-        
+        <nav class="flex-1 ">
+            <header class="footer-title">Services</header>
+            <a class="link link-hover">Academy</a>
+            <a class="link link-hover">Group Lesson</a>
+            <a class="link link-hover">Private Lesson</a>
+            <a class="link link-hover">Hockeys for kids</a>
+            <a class="link link-hover">Hockeys for Adult</a>
+        </nav>
 
 
 
 
-      </footer>
+
+    </footer>
       
 </body>
 
